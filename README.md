@@ -12,10 +12,12 @@
 ## Technology
 We are using Meteor (meteor.com) Plataform with Node.js to implement the OpenJur.
 Other technology:
+
     * jQuery
     * MongoDB
   
 Technology to decide to include later:
+
     * Materialize (materializecss.com)
     * ExtJs
   
