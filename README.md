@@ -3,21 +3,37 @@
  
  
 ## The project
- This is an initial project and we need financial and bussiness knowledge help.
+ This is an project to do the best software for law bussiness. And we need financial and bussiness knowledge help.
  
  To financial help you can donate with PayPal:
  
  [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NM2R9DZ6AHPM4)
 
-## Technology
+
+## Current financial contributors
+
+    - Inovati | Brazilian Software House (http://www.inovati.net.br) |
+
+We need more financial help. Please donate any amount so we can continue the project.
+
+
+
+## Current knowledge contributors - Thank you very much!
+
+    - Tobias Advogados Associados | Brazilian Law Company (http://www.tobias.adv.br/) |
+
+
+
+## About
+
+### Technology
+
 We are using Meteor (meteor.com) Plataform with Node.js to implement the OpenJur.
-Other technology:
 
-    * jQuery
-    * MongoDB
-  
-Technology to decide to include later:
+Other technologies:
 
-    * Materialize (materializecss.com)
-    * ExtJs
-  
+    - jQuery
+    - MongoDB
+    - AdminLte View Template
+
+
