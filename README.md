@@ -3,7 +3,7 @@
 
  
 ## The project
- This is an project to do the best software for law bussiness. And we need financial and bussiness knowledge help.
+ This is an project to do the best software for law business. And we need financial and business knowledge help.
  
  To financial help you can donate with PayPal:
  
