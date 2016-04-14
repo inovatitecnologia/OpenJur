@@ -1,0 +1,6 @@
+{
+  "name": "OpenJur",
+  "tagline": " The OpenJur is an administration OpenSource system for lawyers and law firms of any size.",
+  "body": "# OpenJur\r\n The OpenJur is an administration OpenSource system for lawyers and law firms of any size.\r\n \r\n \r\n## The project\r\n This is an project to do the best software for law bussiness. And we need financial and bussiness knowledge help.\r\n \r\n To financial help you can donate with PayPal:\r\n \r\n [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NM2R9DZ6AHPM4)\r\n\r\n\r\n## Current financial contributors\r\n\r\n    - Inovati | Brazilian Software House (http://www.inovati.net.br) |\r\n\r\nWe need more financial help. Please donate any amount so we can continue the project.\r\n\r\n\r\n\r\n## Current knowledge contributors - Thank you very much!\r\n\r\n    - Tobias Advogados Associados | Brazilian Law Company (http://www.tobias.adv.br/) |\r\n\r\n\r\n\r\n## About\r\n\r\n### Technology\r\n\r\nWe are using Meteor (meteor.com) Plataform with Node.js to implement the OpenJur.\r\n\r\nOther technologies:\r\n\r\n    - jQuery\r\n    - MongoDB\r\n    - AdminLte View Template\r\n\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
