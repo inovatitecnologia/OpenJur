@@ -1,0 +1,49 @@
+<template name="configuration">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Usuários</h3>
+                <div class="box-tools pull-right">
+                  <!-- Buttons, labels, and many other things can be placed here! -->
+                </div><!-- /.box-tools -->
+              </div><!-- /.box-header -->
+              <div class="box-body">
+                {{> reactiveTable collection=usersCollection settings=settingsUsersTable rowsPerPage=5}}
+              </div><!-- /.box-body -->
+              <div class="box-footer">
+              </div><!-- box-footer -->
+            </div><!-- /.box -->
+        </div>
+        
+        <div class="col-md-6">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title"><i class="fa fa-google text-red"></i> - Google API</h3>
+                    <div class="box-tools pull-right">
+                      <!-- Buttons, labels, and many other things can be placed here! -->
+                    </div><!-- /.box-tools -->
+                </div><!-- /.box-header -->
+
+                {{#autoForm id="upsertGoogleServiceAPI" schema=serviceGoogleAPISchema meteormethod="upsertGoogleServiceAPI" type="method" }}
+                    <div class="box-body">
+                        <h4>Client ID: {{googleClientId}}</h4>
+                        <br>
+
+                        
+                            {{> afQuickField name='clientId'}}
+                            {{> afQuickField name='secret'}}
+                        
+                    </div>
+
+                    <div class="box-footer">
+                        <input class="btn btn-success pull-right" type="submit" value="Atualizar">
+                    </div><!-- box-footer -->
+                {{/autoForm}}
+            </div><!-- /.box -->
+        </div>
+
+    </div>
+    
+    
+</template>

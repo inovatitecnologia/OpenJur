@@ -30,11 +30,30 @@ kadira:flow-router
 kadira:blaze-layout
 arillo:flow-router-helpers
 
-# Collections
+# Collections and schema
 aldeed:collection2
+aldeed:simple-schema
+
+# Form
+aldeed:autoform
 
 # Accounts
 useraccounts:core
+useraccounts:bootstrap
+useraccounts:flow-routing
 accounts-password
-alanning:roles
 accounts-google
+alanning:roles
+#accounts-ui
+service-configuration
+bozhao:link-accounts
+
+# Callendar
+rzymek:fullcalendar
+
+# datatables
+#aldeed:tabular
+aslagle:reactive-table
+
+# date helpers
+momentjs:moment

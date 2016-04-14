@@ -3,13 +3,16 @@ accounts-google@1.0.7
 accounts-oauth@1.1.10
 accounts-password@1.1.6
 alanning:roles@1.2.15
+aldeed:autoform@5.8.1
 aldeed:collection2@2.9.1
 aldeed:collection2-core@1.1.1
 aldeed:schema-deny@1.0.1
 aldeed:schema-index@1.0.1
 aldeed:simple-schema@1.5.3
 allow-deny@1.0.2
+anti:i18n@0.4.3
 arillo:flow-router-helpers@0.5.1
+aslagle:reactive-table@0.8.28
 autoupdate@1.2.6
 babel-compiler@6.5.2
 babel-runtime@0.1.6
@@ -19,6 +22,7 @@ blaze@2.1.5
 blaze-html-templates@1.0.2
 blaze-tools@1.0.6
 boilerplate-generator@1.0.6
+bozhao:link-accounts@1.2.9
 caching-compiler@1.0.2
 caching-html-compiler@1.0.4
 callback-hook@1.0.6
@@ -63,6 +67,7 @@ mobile-experience@1.0.2
 mobile-status-bar@1.0.10
 modules@0.5.1
 modules-runtime@0.6.1
+momentjs:moment@2.10.6
 mongo@1.1.5
 mongo-id@1.0.2
 npm-bcrypt@0.7.8_2
@@ -81,10 +86,11 @@ reactive-var@1.0.7
 reload@1.1.6
 retry@1.0.5
 routepolicy@1.0.8
+rzymek:fullcalendar@2.6.1
 service-configuration@1.0.7
 session@1.1.3
 sha@1.0.5
-softwarerero:accounts-t9n@1.1.7
+softwarerero:accounts-t9n@1.3.3
 spacebars@1.0.9
 spacebars-compiler@1.0.9
 srp@1.0.6
@@ -97,7 +103,9 @@ twbs:bootstrap@3.3.6
 ui@1.0.9
 underscore@1.0.6
 url@1.0.7
-useraccounts:core@1.13.1
+useraccounts:bootstrap@1.14.2
+useraccounts:core@1.14.2
+useraccounts:flow-routing@1.14.2
 webapp@1.2.6
 webapp-hashing@1.0.7
 zimme:active-route@2.3.2

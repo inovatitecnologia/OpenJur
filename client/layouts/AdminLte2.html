@@ -1,0 +1,36 @@
+<template name="AdminLte2">
+    {{#AdminLTE skin="black" sidebarMini="true"}}
+
+        {{> navbar}}
+  
+        {{> sidebar}}
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 916px;">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                {{{contentHeader}}}
+                <small>{{{contentHeaderTip}}}</small>
+                </h1>
+                <ol class="breadcrumb">
+                    {{#each breadcrumbs}}
+                        <li><a href="{{href}}"><i class="{{iconClass}}"></i> {{text}}</a></li>
+                    {{/each}}
+                </ol>
+            </section>
+
+
+            <section class="content">
+                {{> Template.dynamic template=content}}
+                
+            </section>
+
+
+        </div>
+        <!-- /.content-wrapper -->
+
+        {{> footer}}
+        
+    {{/AdminLTE}}
+</template>

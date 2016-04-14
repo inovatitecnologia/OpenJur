@@ -6,10 +6,10 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="http://www.suacidade.com/sites/default/files/images/robert_downey_jr_-906173-large_image.jpg" class="img-circle" alt="User Image">
+          <img src="{{ currentUser.services.google.picture }}" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Tony Stark</p>
+          <p>{{ currentUserName }}</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -27,9 +27,19 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">Navegação principal</li>
-        <li class="active treeview">
-          <a href="#">
+        <li class="treeview">
+          <a href="{{pathFor 'default.dashboard'}}">
             <i class="fa fa-dashboard"></i> <span>Painel de controle</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="{{pathFor 'default.calendar'}}">
+            <i class="fa fa-calendar"></i> <span>Minha agenda</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="{{pathFor 'default.configuration'}}">
+            <i class="fa fa-cog"></i> <span>Configurações</span>
           </a>
         </li>
       </ul>
