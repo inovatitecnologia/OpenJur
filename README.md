@@ -5,8 +5,9 @@
  The OpenJur is an administration OpenSource system for lawyers and law firms of any size.
 
  
-## The project
- This is an project to do the best software for law business. And we need financial and business knowledge help.
+## The Project
+ 
+ This is a project to design the best software for business law. We need financial and business knowledge assistance for this project.
  
  To financial help you can donate with PayPal:
  
@@ -44,3 +45,5 @@ Other technologies:
     - MongoDB
     - AdminLte View Template
 
+## Other Contributors
++ Luis Paulo Silveira
