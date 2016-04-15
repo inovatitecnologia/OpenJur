@@ -2,7 +2,7 @@
 
 ![alt tag](https://s9.postimg.org/gb3hy6d0b/openjur_logo.png)
 
- The OpenJur is an administration OpenSource system for lawyers and law firms of any size.
+ The OpenJur is an administrative OpenSource system for lawyers and law firms of any size.
 
  
 ## The Project
