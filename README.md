@@ -45,5 +45,8 @@ Other technologies:
     - MongoDB
     - AdminLte View Template
 
+## Developers Contributors
+David Basilio Espitalher - @dbasilioesp
+
 ## Other Contributors
 + Luis Paulo Silveira
