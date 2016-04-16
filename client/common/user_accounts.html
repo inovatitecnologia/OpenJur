@@ -1,19 +1,19 @@
 <template name="user_accounts">
-<style type="text/css" media="screen">
-    body {
-        background-color: #222d32;
-    }    
-</style>
+    <style type="text/css" media="screen">
+        body {
+            background-color: #222d32;
+        }    
+    </style>
 
-    <div class="row-fluid" style="margin-top: 40px;">
-        <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-            <div style="text-align: center; color: white; background-color: white; padding: 15px;">
+    <div class="row-fluid" id="login-block">
+        <div class="col-xs-12 col-md-4 col-md-offset-4">
+            <div id="login-logo">
                 <img src="/images/openjur_logo.png" alt="OpenJur logo" class="img-responsive center-block">
             </div>
-            <div style="background-color: white;">
+            <div id="login-form">
                 {{> atForm}}
             </div>
-            <div style="color: white">
+            <div id="version-info">
                 <span>v{{versionOpenJur}}</span>
             </div>
         </div>
