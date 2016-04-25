@@ -13,6 +13,25 @@
  
  [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NM2R9DZ6AHPM4)
 
+## Quick Start for developers
+
+1 - Install Meteor. Look at: https://www.meteor.com/install
+
+2 - Download this repo with git clone:
+```
+$ git clone https://github.com/inovatitecnologia/OpenJur.git
+```
+
+3 - Enter the project cloned path:
+```
+$ cd openjur
+```
+
+4 - Start server with command line: 
+```
+$ meteor
+```
+5 - Enjoy and contribute :)
 
 ## Current financial contributors
 
@@ -46,7 +65,7 @@ Other technologies:
     - AdminLte View Template
 
 ## Developers Contributors
-David Basilio Espitalher - @dbasilioesp
++ David Basilio Espitalher - @dbasilioesp
 
 ## Other Contributors
 + Luis Paulo Silveira
