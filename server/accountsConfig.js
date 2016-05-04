@@ -53,7 +53,7 @@ Accounts.onCreateUser(function(options, user){
     return user;
 });
 
- 
+
 Meteor.methods({
     upsertGoogleServiceAPI: function(data) {
         ServiceConfiguration.configurations.upsert(

@@ -1,59 +1,59 @@
 <template name="navbar">
     <header class="main-header">
 
-    <!-- Logo -->
-    <a href="index2.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini">O<b>J</b></span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg">Open<b>Jur</b></span>
-    </a>
+        <!-- Logo -->
+        <a href="index2.html" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini">O<b>J</b></span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg">Open<b>Jur</b></span>
+        </a>
 
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-        <!-- Navbar Right Menu -->
-        <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav">
-                <li class="dropdown notifications-menu">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa fa-bell-o"></i>
-                        <span class="label label-warning">{{nNotificacoes}}</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="header">Você tem {{nNotificacoes}} novas notificações</li>
-                        <li>
-                            <!-- inner menu: contains the actual data -->
-                            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                                        page and may cause design problems
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-users text-red"></i> 5 new members joined
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-user text-red"></i> You changed your username
-                                    </a>
-                                </li>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <!-- Navbar Right Menu -->
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">{{nNotificacoes}}</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">Você tem {{nNotificacoes}} novas notificações</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                                            page and may cause design problems
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-users text-red"></i> 5 new members joined
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-user text-red"></i> You changed your username
+                                        </a>
+                                    </li>
                                 </ul><div class="slimScrollBar" style="width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
                             </li>
                             <li class="footer"><a href="#">View all</a></li>
@@ -62,38 +62,49 @@
 
 
 
-                <li class="dropdown user user-menu">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                      <span>Meu perfil</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <!-- User image -->
-                      <li class="user-header">
-                        <img src="{{ currentUser.services.google.picture }}" class="img-circle" alt="User Image">
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span>Meu perfil</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                                {{#if currentUser.services.google.picture }}
+                                    <img src="{{ currentUser.services.google.picture }}" class="img-circle" alt="User Image">
+                                {{else}}
+                                    <img src="/images/not_image.png" class="img-circle" alt="User Image">
+                                {{/if}}
+                                <p>
+                                    {{ currentUserName }}
+                                    <small>Usuário desde {{ currentUserSignupDate }}</small>
+                                </p>
+                            </li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                {{#if hasLinkWithGoogle}}
+                                    {{#unless currentUser.services.google }}
+                                        <button class="btn btn-danger at-social-btn" id="linkWithGoogle">
+                                            <i class="fa fa-google"></i> Lincar com conta do Google
+                                        </button>
+                                    {{/unless}}
+                                {{/if}}
 
-                        <p>
-                          {{ currentUserName }}
-                          <small>Usuário desde {{ currentUserSignupDate }}</small>
-                        </p>
-                      </li>
-                      <!-- Menu Footer-->
-                      <li class="user-footer">
-                        <div class="pull-left">
-                          <a href="#" class="btn btn-default btn-flat">Meus dados</a>
-                        </div>
-                        <div class="pull-right">
-                          <a href="#" onclick="AccountsTemplates.logout();" class="btn btn-default btn-flat">Logout</a>
-                        </div>
-                      </li>
-                    </ul>
-                </li>
-            </ul>
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-default btn-flat">Meus dados</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#" onclick="AccountsTemplates.logout();" class="btn btn-default btn-flat">Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
 
 
 
 
-        </div>
+            </div>
 
-    </nav>
-  </header>
+        </nav>
+    </header>
 </template>

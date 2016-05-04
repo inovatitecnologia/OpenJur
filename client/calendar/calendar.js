@@ -6,7 +6,7 @@ defaultRoutes.route('/calendar', {
         ContentGlobalVars.setBreadcrumbs([
             {
                 iconClass: 'fa fa-calendar', 
-                text: 'Painel de controle', 
+                text: 'Minha agenda', 
                 href: FlowRouter.url('default.calendar')
             }
         ]);

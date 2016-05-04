@@ -1,7 +1,62 @@
 <template name="calendar">
 
-    <div style="background-color: white">
-        {{> fullcalendar options}}    
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Tarefas</h3>
+                <div class="box-tools pull-right">
+                  <!-- Buttons, labels, and many other things can be placed here! -->
+                </div><!-- /.box-tools -->
+              </div><!-- /.box-header -->
+              <div class="box-body">
+                <ul>
+                    <li>Tarefa 1</li>
+                    <li>Tarefa 2</li>
+                    <li>Tarefa 3</li>
+                </ul>
+              </div><!-- /.box-body -->
+              <div class="box-footer">
+              </div><!-- box-footer -->
+            </div><!-- /.box -->
+
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Filtro da agenda</h3>
+                <div class="box-tools pull-right">
+                  <!-- Buttons, labels, and many other things can be placed here! -->
+                </div><!-- /.box-tools -->
+              </div><!-- /.box-header -->
+              <div class="box-body">
+                
+              </div><!-- /.box-body -->
+              <div class="box-footer">
+              </div><!-- box-footer -->
+            </div><!-- /.box -->
+        </div>
+
+
+
+        <div class="col-md-9">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Agenda</h3>
+                <div class="box-tools pull-right">
+                  <!-- Buttons, labels, and many other things can be placed here! -->
+                </div><!-- /.box-tools -->
+              </div><!-- /.box-header -->
+              <div class="box-body">
+                <div style="background-color: white">
+                    {{> fullcalendar options}}    
+                </div>
+              </div><!-- /.box-body -->
+              <div class="box-footer">
+              </div><!-- box-footer -->
+            </div><!-- /.box -->
+        </div>
     </div>
+
+    
 
 </template>

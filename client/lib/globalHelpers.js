@@ -1,20 +1,44 @@
 Template.registerHelper('versionOpenJur', function() {
-    return '0.1.0-alpha';
+    return '0.2.0-alpha';
 });
 
 Template.registerHelper('currentUserName', function() {
-    if (Meteor.user().services) {
-        //if (Meteor.user().services.google) {
-            return Meteor.user().services.google.name;
-        //}
+    if (Meteor.user()) {
+        if (Meteor.user().profile.full_name) {
+            return Meteor.user().profile.full_name
+        } else if (!Meteor.user().services) {
+            return Meteor.user().name;
+        } else {
+            if (Meteor.user().services.google) {
+                return Meteor.user().services.google.name;
+            }
+        }
+
+        return Meteor.user().profile.full_name;
     }
-    
-    return Meteor.user().profile.name;
+
+    return false;
 });
 
 Template.registerHelper('currentUserSignupDate', function() {
-    moment.locale('pt_br');
-    var date = new Date(Meteor.user().createdAt);
+    if (Meteor.user()) {
+        moment.locale('pt_br');
+        var date = new Date(Meteor.user().createdAt);
 
-    return moment(date).format('L');
+        return moment(date).format('L');
+    }
+    
+    return false;
 });
+
+Template.registerHelper('hasLinkWithGoogle', function() {
+    return Meteor.hasLinkWithGoogle();
+});
+
+Meteor.hasLinkWithGoogle = function() {
+    if (ServiceConfiguration.configurations.find({service: 'google'}).count() > 0) {
+        return true;
+    }
+
+    return false;
+};
