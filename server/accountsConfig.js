@@ -3,9 +3,10 @@ Accounts.onCreateUser(function(options, user){
     /*if (user.email) {
 
     }*/
-    var roles = [];
+    var roles = {};
+
     if (options.username == 'root') {
-        roles.push('root');
+        roles[Roles.GLOBAL_GROUP] = ['root'];
     }
     user.roles = roles;
 

@@ -2,11 +2,13 @@
     {{#AdminLTE skin="black" sidebarMini="true"}}
 
         {{> navbar}}
-  
+
         {{> sidebar}}
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper" style="min-height: 916px;">
+            {{> flashMessages}}
+
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
@@ -23,7 +25,7 @@
 
             <section class="content">
                 {{> Template.dynamic template=content}}
-                
+
             </section>
 
 
@@ -31,6 +33,6 @@
         <!-- /.content-wrapper -->
 
         {{> footer}}
-        
+
     {{/AdminLTE}}
 </template>

@@ -32,6 +32,7 @@ arillo:flow-router-helpers
 
 # Collections and schema
 aldeed:collection2
+dburles:collection-helpers
 aldeed:simple-schema
 
 # Form
@@ -51,10 +52,20 @@ bozhao:link-accounts
 # Callendar
 rzymek:fullcalendar
 
-# datatables
+# Datatables
 #aldeed:tabular
 aslagle:reactive-table
 
-# date helpers
-momentjs:moment
+# Other helpers
 less
+momentjs:moment
+teamon:tinymce
+mrt:bootstrap3-wysihtml5
+rainhaven:mask-money
+underscore
+codechimp:autoform-masked-input
+mrt:flash-messages
+
+# Datepickers
+rajit:bootstrap3-datepicker
+aldeed:autoform-bs-datepicker

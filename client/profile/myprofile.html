@@ -1,0 +1,33 @@
+<template name="myprofile">
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Meus dados</h3>
+                    <div class="box-tools pull-right">
+                        <!-- Buttons, labels, and many other things can be placed here! -->
+                    </div><!-- /.box-tools -->
+                </div><!-- /.box-header -->
+
+
+                {{#autoForm collection="Meteor.users" doc=userDoc id="updateProfileData" type="update" resetOnSuccess=false}}
+                <div class="box-body">
+
+                        {{> afQuickField name='profile.full_name' label="Nome completo" type="text"}}
+                        {{> afQuickField name='profile.birthday' label="Data de nascimento" type="bootstrap-datepicker" datePickerOptions=datepickerOptions}}
+                        {{> afQuickField name='profile.gender' type="select-radio-inline" label="Sexo" options=genderOptions}}
+                        {{> afQuickField name='profile.bio' label="Biografia" type="textarea" class="textareaWithTinyMCE" rows="15"}}
+
+                </div><!-- /.box-body -->
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">Atualizar dados</button>
+                </div><!-- box-footer -->
+                {{/autoForm}}
+            </div><!-- /.box -->
+        </div>
+    </div>
+
+
+</template>
