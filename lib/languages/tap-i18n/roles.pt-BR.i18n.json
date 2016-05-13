@@ -1,0 +1,20 @@
+{
+    "roles": {
+        "root": {
+            "name": "Usuário root",
+            "description": "Root é o perfil de usuario mais elevado do sistema. Esse tipo de usuário pode fazer quaquer coisa dentro do sistema."
+        },
+        "system_administrator": {
+            "name": "Administrador do sistema",
+            "description": "O administrador do sistema tem total poder sobre o sistema, mas não pode fazer algumas coisas que o usuário root pode fazer."
+        },
+        "users_manager": {
+            "name": "Administrador de usuários",
+            "description": "O administrador de usuários tem a permissão para adicionar, editar permissões ou remover usuários do sistema."
+        },
+        "configuration_manager": {
+            "name": "Administrador de configurações",
+            "description": "O administrador de configurações tem a permissão para alterar configurações pertinentes a todo o sistema."
+        }
+    }
+}

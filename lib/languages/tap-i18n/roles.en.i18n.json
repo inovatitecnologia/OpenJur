@@ -1,0 +1,19 @@
+{
+    "roles": {
+        "root": {
+            "name": "Root User",
+            "description": "Root is the most elevated role of users. This type of user can do everything in the system."
+        },
+        "system_administrator": {
+            "name": "System Administrator",
+            "description": "The System Administrator has the full power about the system, but can't do some things Root User can do.",
+            "sub_roles": {
+                "users_manager": {
+                    "name": "User Manager",
+                    "description": "User Manager has the permission to add, edit permissions or remove users from the system."
+                }
+            }
+        }
+
+    }
+}

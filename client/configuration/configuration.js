@@ -8,8 +8,8 @@ defaultRoutes.route('/configuration', {
         ContentGlobalVars.setContentHeaderTip('Aqui você pode configurar o sistema.');
         ContentGlobalVars.setBreadcrumbs([
             {
-                iconClass: 'fa fa-cog', 
-                text: 'Configurações', 
+                iconClass: 'fa fa-cog',
+                text: 'Configurações',
                 href: FlowRouter.url('default.configuration')
             }
         ]);
@@ -20,11 +20,15 @@ defaultRoutes.route('/configuration', {
 Template.configuration.events({
     'submit #upsertGoogleServiceAPI': function (e) {
         e.preventDefault();
-        
+
         //inputs.push({e.target[0].value});
         // Meteor.call('upsertGoogleServiceAPI', , function (error, result) {
 
         // });
+    },
+    'click .alterPermission': function(e) {
+        var data = $(e.currentTarget).data();
+        FlowRouter.go('default.permissions', {userDocId: data.idUser});
     }
 });
 
@@ -37,7 +41,17 @@ Template.configuration.helpers({
     },
     settingsUsersTable: {
         fields: [
-            { key: 'profile.name', label: 'Nome' },
+            { key: 'username', label: 'Usuário' },
+            { key: 'profile.full_name', label: 'Nome' },
+            {
+                key: 'roles', label: 'Permissões', sortable: false,
+                tmpl: Template._listOfRoles
+            },
+            {
+                key: '_id',
+                label: 'Ações',
+                fn: function(value) { return Spacebars.SafeString('<button class="btn btn-success alterPermission" data-id-user="' + value + '" title="Alterar permissões"><i class="fa fa-share-alt"></i></button>') }
+            },
         ]
     },
     serviceGoogleAPISchema: function() {

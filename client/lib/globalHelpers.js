@@ -2,6 +2,15 @@ Template.registerHelper('versionOpenJur', function() {
     return '0.2.0-alpha';
 });
 
+
+Meteor._t = function(key, options) {
+    return TAPi18n.__(key, options, lang_tag='pt-BR');
+}
+//
+// Template.registerHelper('_t', function(key, options) {
+//     return Meteor._t(key, options);
+// });
+
 Template.registerHelper('currentUserName', function() {
     if (Meteor.user()) {
         if (Meteor.user().profile.full_name) {
@@ -27,7 +36,7 @@ Template.registerHelper('currentUserSignupDate', function() {
 
         return moment(date).format('L');
     }
-    
+
     return false;
 });
 

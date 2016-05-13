@@ -18,8 +18,6 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 standard-minifier-css
 standard-minifier-js
 
-reactive-var
-
 # Template
 mfactory:admin-lte
 fortawesome:fontawesome
@@ -34,6 +32,8 @@ arillo:flow-router-helpers
 aldeed:collection2
 dburles:collection-helpers
 aldeed:simple-schema
+reactive-var
+reactive-dict
 
 # Form
 aldeed:autoform
@@ -65,7 +65,12 @@ rainhaven:mask-money
 underscore
 codechimp:autoform-masked-input
 mrt:flash-messages
+sujith3g:jstree
 
 # Datepickers
 rajit:bootstrap3-datepicker
 aldeed:autoform-bs-datepicker
+
+# i18n
+anti:i18n
+tap:i18n

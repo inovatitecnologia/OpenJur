@@ -1,0 +1,25 @@
+<template name="permissions">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Permissões para <b>{{userFullName}}</b></h3>
+                    <div class="box-tools pull-right">
+                        <!-- Buttons, labels, and many other things can be placed here! -->
+                    </div><!-- /.box-tools -->
+                </div><!-- /.box-header -->
+                <div class="box-body" style="overflow: auto">
+                    <div id="permissionsTree" style="display: block">
+                    </div>
+                </div><!-- /.box-body -->
+                <div class="box-footer">
+                    <button id="updatePermissions" class="btn btn-success">
+                        Atualizar Permissões
+                    </button>
+                </div><!-- box-footer -->
+            </div><!-- /.box -->
+        </div>
+    </div>
+
+</template>

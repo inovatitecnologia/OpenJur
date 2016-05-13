@@ -1,0 +1,9 @@
+<template name="_listOfRoles">
+    <ul>
+
+        {{#each roles.__global_roles__}}
+            <li>{{ getRoleName this}}</li>
+        {{/each}}
+
+    </ul>
+</template>
